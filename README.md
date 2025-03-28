@@ -4,15 +4,15 @@ A lightweight code style guide to improve readability and collaboration. SquidNo
 ## Documentation
 
 ### European Languages
-- ### [English version](SquidNorm.en.md)
-- ### [Version française](SquidNorm.fr.md)
-- ### [Versión española](SquidNorm.es.md)
-- ### [Deutsche Version](SquidNorm.de.md)
-- ### [Versão portuguesa](SquidNorm.pt.md)
-- ### [Versione russa](SquidNorm.ru.md)
+- ### [English version](languages/SquidNorm.en.md)
+- ### [Version française](languages/SquidNorm.fr.md)
+- ### [Versión española](languages/SquidNorm.es.md)
+- ### [Deutsche Version](languages/SquidNorm.de.md)
+- ### [Versão portuguesa](languages/SquidNorm.pt.md)
+- ### [Versione russa](languages/SquidNorm.ru.md)
 
 ### Asian Languages
-- ### [简体中文版](SquidNorm.zh-cn.md)
-- ### [日本語版](SquidNorm.ja.md)
-- ### [한국어 버전](SquidNorm.ko.md)
-- ### [हिंदी संस्करण](SquidNorm.hi.md)
+- ### [简体中文版](languages/SquidNorm.zh-cn.md)
+- ### [日本語版](languages/SquidNorm.ja.md)
+- ### [한국어 버전](languages/SquidNorm.ko.md)
+- ### [हिंदी संस्करण](languages/SquidNorm.hi.md)
