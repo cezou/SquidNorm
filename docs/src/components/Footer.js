@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <p>Created by Cezou | <a href="https://github.com/username/SquidNorm" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
+        <p>Created by Cezou | <a href="https://github.com/cezou/SquidNorm" target="_blank" rel="noopener noreferrer">GitHub Repository</a></p>
       </div>
     </footer>
   );

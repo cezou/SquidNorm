@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,11 +9,11 @@ import './styles/App.scss';
 /**
  * Main application component
  * 
- * Sets up routing and main layout structure
+ * Sets up routing and main layout structure using HashRouter for GitHub Pages compatibility
  */
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <div className="app">
         <Header />
         <main className="content">

@@ -21,7 +21,8 @@ function Documentation() {
     const fetchMarkdown = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`/SquidNorm/languages/SquidNorm.${language}.md`);
+        // Utiliser un chemin relatif pour les fichiers Markdown
+        const response = await fetch(`${process.env.PUBLIC_URL}/languages/SquidNorm.${language}.md`);
         
         if (!response.ok) {
           throw new Error(`Failed to load documentation for ${language}`);
@@ -61,7 +62,8 @@ function Documentation() {
         <select 
           value={language}
           onChange={(e) => {
-            window.location.href = `/SquidNorm/docs/${e.target.value}`;
+            // Utiliser le format de HashRouter pour les liens
+            window.location.hash = `#/docs/${e.target.value}`;
           }}
         >
           {allLanguages.map(lang => (
