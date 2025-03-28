@@ -1,5 +1,5 @@
 # 🦑 The Squid Norm 🦑
-A lightweight and opinionated code style guide to improve readability and collaboration. SquidNorm focuses on clear structure, consistent spacing, meaningful naming, and strategic commenting to make code more maintainable and readable for both humans and AI tools.
+A lightweight code style guide to improve readability and collaboration. SquidNorm focuses on clear structure, consistent spacing, meaningful naming, and strategic commenting to make code more maintainable and readable for both humans and AI tools.
 
 ## Documentation
 
