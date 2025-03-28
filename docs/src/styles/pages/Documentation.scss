@@ -1,0 +1,96 @@
+@import '../variables';
+
+.documentation-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-md;
+  
+  .language-selector {
+    margin-bottom: $spacing-lg;
+    
+    select {
+      padding: $spacing-sm;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      background-color: white;
+      cursor: pointer;
+    }
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: $spacing-xl;
+  }
+  
+  .error {
+    color: $accent-color;
+  }
+  
+  .markdown-content {
+    background-color: white;
+    padding: $spacing-lg;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    
+    h1 {
+      color: $secondary-color;
+      margin-bottom: $spacing-lg;
+      font-size: 2rem;
+    }
+    
+    h2 {
+      color: $primary-color;
+      margin-top: $spacing-lg;
+      margin-bottom: $spacing-md;
+      padding-bottom: $spacing-sm;
+      border-bottom: 1px solid $light-gray;
+    }
+    
+    h3 {
+      color: $secondary-color;
+      margin-top: $spacing-md;
+      margin-bottom: $spacing-sm;
+    }
+    
+    p {
+      margin-bottom: $spacing-md;
+    }
+    
+    ul, ol {
+      margin-bottom: $spacing-md;
+      padding-left: $spacing-lg;
+      
+      li {
+        margin-bottom: $spacing-sm;
+      }
+    }
+    
+    ul {
+      list-style-type: disc;
+    }
+    
+    ol {
+      list-style-type: decimal;
+    }
+    
+    pre {
+      margin-bottom: $spacing-md;
+      border-radius: $border-radius;
+      overflow: auto;
+    }
+    
+    code {
+      font-family: monospace;
+      background-color: $light-gray;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+    
+    blockquote {
+      border-left: 4px solid $primary-color;
+      padding-left: $spacing-md;
+      margin: $spacing-md 0;
+      color: $dark-gray;
+    }
+  }
+}

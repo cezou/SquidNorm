@@ -1,0 +1,16 @@
+@import '../variables';
+
+.footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: $spacing-md 0;
+  text-align: center;
+  
+  a {
+    color: $primary-color;
+    
+    &:hover {
+      color: lighten($primary-color, 15%);
+    }
+  }
+}

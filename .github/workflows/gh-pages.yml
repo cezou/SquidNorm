@@ -1,35 +1,43 @@
 <!-- filepath: c:\Users\cesai\Documents\codeProjects\SquidNorm\.github\workflows\gh-pages.yml -->
-name: Deploy to GitHub Pages
+name: Deploy React App to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Set this to your default branch
+      - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v2
-
+      
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
-
-      - name: Convert Markdown files to HTML
+          node-version: '16'
+      
+      - name: Install Dependencies
         run: |
-          npm install -g marked
-          mkdir -p _site/languages
-          cp index.html _site/
-          for file in languages/*.md; do
-            filename=$(basename "$file" .md)
-            marked -i "$file" -o "_site/languages/${filename}.html"
-          done
-
+          cd docs
+          npm install
+      
+      - name: Build
+        run: |
+          cd docs
+          npm run build
+        env:
+          PUBLIC_URL: /SquidNorm
+      
+      - name: Copy Markdown Files
+        run: |
+          mkdir -p docs/build/languages
+          cp languages/*.md docs/build/languages/
+      
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: _site
+          folder: docs/build

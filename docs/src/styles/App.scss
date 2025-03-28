@@ -1,0 +1,12 @@
+@import 'variables';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1;
+  padding: $spacing-lg 0;
+}
