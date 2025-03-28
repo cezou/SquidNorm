@@ -3,5 +3,5 @@ A lightweight code style guide to improve readability and collaboration. SquidNo
 
 ## Documentation
 
-### [English version](SquidNorm.en.md)
-### [Version française](SquidNorm.fr.md)
+- ### [English version](SquidNorm.en.md)
+- ### [Version française](SquidNorm.fr.md)
