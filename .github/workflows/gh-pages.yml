@@ -20,9 +20,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
-          cache: 'npm'
-          cache-dependency-path: 'docs/package-lock.json'
+          node-version: 'latest'
+          # Désactiver la mise en cache pour éviter les erreurs
       
       - name: Install Dependencies
         run: |
