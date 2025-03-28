@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/SquidNorm/static/css/main.6198ace2.css",
-    "main.js": "/SquidNorm/static/js/main.be12710c.js",
+    "main.js": "/SquidNorm/static/js/main.aceefaa0.js",
     "index.html": "/SquidNorm/index.html",
     "main.6198ace2.css.map": "/SquidNorm/static/css/main.6198ace2.css.map",
-    "main.be12710c.js.map": "/SquidNorm/static/js/main.be12710c.js.map"
+    "main.aceefaa0.js.map": "/SquidNorm/static/js/main.aceefaa0.js.map"
   },
   "entrypoints": [
     "static/css/main.6198ace2.css",
-    "static/js/main.be12710c.js"
+    "static/js/main.aceefaa0.js"
   ]
 }
